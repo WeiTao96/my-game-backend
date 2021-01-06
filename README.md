@@ -1,31 +1,33 @@
-<p align="center">
-  <a href="https://expressjs.com/" target="blank"><img src="http://wanago.io/express.png" width="320" alt="Express Logo" /></a>
-</p>
+# example
 
-## Description
 
-This repository is a part of the [Express Typescript tutorial](https://wanago.io/courses/typescript-express-tutorial/).
 
-Each part of the course has its own branch, called for example [_part-1_](https://github.com/mwanago/express-typescript/tree/part-1).
+## QuickStart
 
-The the [_master_](https://github.com/mwanago/express-typescript) branch represents the version with **MongoDB**.
+<!-- add docs here for user -->
 
-The [_postgres_](https://github.com/mwanago/express-typescript/tree/postgres) branch contains the version with **PostgreSQL**.
+see [egg docs][egg] for more detail.
 
-## Installation
+### Development
 
 ```bash
-npm install
+$ npm i
+$ npm run dev
+$ open http://localhost:7001/
 ```
 
-## Running
+### Deploy
 
 ```bash
-npm run dev
+$ npm start
+$ npm stop
 ```
 
-## Testing
+### npm scripts
 
-```bash
-npm run test
-```
+- Use `npm run lint` to check code style.
+- Use `npm test` to run unit test.
+- Use `npm run autod` to auto detect dependencies upgrade, see [autod](https://www.npmjs.com/package/autod) for more detail.
+
+
+[egg]: https://eggjs.org

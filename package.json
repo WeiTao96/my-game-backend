@@ -1,50 +1,49 @@
 {
-  "name": "express-typescript",
+  "name": "example",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server.ts",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
   "dependencies": {
-    "@types/bcrypt": "^3.0.0",
-    "bcrypt": "^3.0.8",
-    "body-parser": "^1.19.0",
-    "class-transformer": "^0.2.3",
-    "class-validator": "^0.11.0",
-    "cookie-parser": "^1.4.4",
-    "dotenv": "^8.2.0",
-    "envalid": "^6.0.1",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.11"
+    "chinese-random-name": "^1.0.0",
+    "egg": "^2.15.1",
+    "egg-mongoose": "^3.3.1",
+    "egg-scripts": "^2.11.0",
+    "nanoid": "^3.1.20"
   },
   "devDependencies": {
-    "@types/cookie-parser": "^1.4.2",
-    "@types/express": "^4.17.2",
-    "@types/jest": "^25.1.2",
-    "@types/jsonwebtoken": "^8.3.7",
-    "@types/mongoose": "^5.7.13",
-    "@types/node": "^13.7.0",
-    "@types/supertest": "^2.0.8",
-    "husky": "^4.2.1",
-    "jest": "^25.1.0",
-    "node-gyp": "^6.1.0",
-    "nodemon": "^2.0.2",
-    "supertest": "^4.0.2",
-    "ts-jest": "^25.2.0",
-    "ts-node": "^8.6.2",
-    "tslint": "^6.0.0",
-    "tslint-config-airbnb": "^5.11.2",
-    "typescript": "^3.7.5"
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.11.0",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "eslint-config-egg": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   },
   "scripts": {
-    "dev": "ts-node ./src/server.ts",
-    "lint": "tslint -p tsconfig.json -c tslint.json",
-    "test": "jest"
+    "start": "egg-scripts start --daemon --title=egg-server-example",
+    "stop": "egg-scripts stop --title=egg-server-example",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
   },
-  "author": "Marcin Wanago",
-  "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  }
+  "ci": {
+    "version": "10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
 }
