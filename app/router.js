@@ -8,5 +8,6 @@ module.exports = app => {
   // 人物路由
   require('./router/person')(app);
   require('./router/equipment')(app);
+  require('./router/skill')(app);
   router.get('/', controller.home.index);
 };
