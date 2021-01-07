@@ -15,7 +15,7 @@ class PersonService extends Service {
                     age: this.Random(13, 70),
                     sex: this.Random(0, 1),
                     job: 10,
-                    ablility: {
+                    ability: {
                         HP: this.Random(1000, 10000),
                         MAX_HP: this.Random(10000, 20000),
                         power: this.Random(1, 100),
@@ -28,6 +28,14 @@ class PersonService extends Service {
                         look: this.Random(1, 10),
                         loyalty: 60
                     },
+                    skills: {
+                        initiative: [
+                            {
+                                name: '下劈',
+                                _id: '5ff6d3722b5e130c3ee639ad'
+                            }
+                        ]
+                    }
                 }
                 break;
             case "middle":
@@ -36,7 +44,7 @@ class PersonService extends Service {
                     age: this.Random(13, 70),
                     sex: this.Random(0, 1),
                     job: 10,
-                    ablility: {
+                    ability: {
                         HP: this.Random(1000, 10000),
                         MAX_HP: this.Random(10000, 18000),
                         power: this.Random(1, 100),
@@ -49,6 +57,14 @@ class PersonService extends Service {
                         look: this.Random(1, 10),
                         loyalty: 60
                     },
+                    skills: {
+                        initiative: [
+                            {
+                                name: '下劈',
+                                _id: '5ff6d3722b5e130c3ee639ad'
+                            }
+                        ]
+                    }
                 }
                 break;
             case "low":
@@ -57,7 +73,7 @@ class PersonService extends Service {
                     age: this.Random(13, 70),
                     sex: this.Random(0, 1),
                     job: 10,
-                    ablility: {
+                    ability: {
                         HP: this.Random(1000, 10000),
                         MAX_HP: this.Random(10000, 12000),
                         power: this.Random(1, 100),
@@ -70,6 +86,14 @@ class PersonService extends Service {
                         look: this.Random(1, 10),
                         loyalty: 60
                     },
+                    skills: {
+                        initiative: [
+                            {
+                                name: '下劈',
+                                _id: '5ff6d3722b5e130c3ee639ad'
+                            }
+                        ]
+                    }
                 }
                 break;
             default:
@@ -77,6 +101,10 @@ class PersonService extends Service {
         }
         let return_user = this.ctx.model.Person.create(user)
         return return_user
+    }
+    async update(id, update) {
+        let result = this.ctx.model.Person.findOneAndUpdate({ _id: id }, update, { new: true })
+        return result
     }
     Random(min, max) {
         return Math.round(Math.random() * (max - min)) + min;

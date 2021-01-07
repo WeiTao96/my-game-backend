@@ -41,7 +41,7 @@ module.exports = app => {
         bags: {
             type: Array
         },
-        ablility: {
+        ability: {
             HP: {
                 type: Number
             },

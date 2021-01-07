@@ -13,6 +13,12 @@ class PersonController extends Controller {
         const res = await this.ctx.service.person.getAllPerson()
         this.ctx.body = res
     }
+    async update() {
+        const id = this.ctx.params.id;
+        const update = this.ctx.request.body;
+        const res = await this.ctx.service.person.update(id, update)
+        this.ctx.body = res
+    }
 }
 
 module.exports = PersonController;

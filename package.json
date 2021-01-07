@@ -9,6 +9,7 @@
   "dependencies": {
     "chinese-random-name": "^1.0.0",
     "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
     "egg-mongoose": "^3.3.1",
     "egg-scripts": "^2.11.0",
     "nanoid": "^3.1.20"
