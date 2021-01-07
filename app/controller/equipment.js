@@ -6,9 +6,17 @@ class EquipmentController extends Controller {
     async newEffect() {
         const { ctx, service } = this;
         const name = ctx.request.body.name;
-        const num = ctx.request.body.num;
         const description = ctx.request.body.description;
-        const res = await ctx.service.equipment.newEquipmentEffect(name, num, description)
+        const type = ctx.request.body.type;
+        const res = await ctx.service.equipment.newEquipmentEffect(name, description, type)
+        ctx.body = res
+    }
+    async newEquipment() {
+        const { ctx, service } = this;
+        const name = ctx.request.body.name;
+        const level = ctx.request.body.level;
+        const type = ctx.request.body.type;
+        const res = await ctx.service.equipment.createNewEquipment(name, type, Number(level))
         ctx.body = res
     }
     async getEffect() {
