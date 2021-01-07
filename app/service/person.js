@@ -106,6 +106,10 @@ class PersonService extends Service {
         let result = this.ctx.model.Person.findOneAndUpdate({ _id: id }, update, { new: true })
         return result
     }
+    async remove(id) {
+        let result = this.ctx.model.Person.findOneAndDelete({ _id: id })
+        return result
+    }
     Random(min, max) {
         return Math.round(Math.random() * (max - min)) + min;
     }
