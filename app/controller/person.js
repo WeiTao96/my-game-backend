@@ -24,6 +24,11 @@ class PersonController extends Controller {
         const res = await this.ctx.service.person.remove(id)
         this.ctx.body = res
     }
+    async battle() {
+        const query = this.ctx.query
+        const res = await this.ctx.service.battle.fight(query.aId, query.bId)
+        this.ctx.body = res
+    }
 }
 
 module.exports = PersonController;

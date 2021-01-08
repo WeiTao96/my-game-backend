@@ -59,7 +59,7 @@ class EquipmentService extends Service {
                     type: 'hat',
                     value: [
                         {
-                            defense: this.Random(10, 15)
+                            label: 'defense', value: this.Random(10, 15)
                         }
                     ],
                     effect: [],
@@ -74,7 +74,7 @@ class EquipmentService extends Service {
                     type: 'hat',
                     value: [
                         {
-                            defense: this.Random(15, 20)
+                            label: 'defense', value: this.Random(15, 20)
                         }
                     ],
                     effect: [],
@@ -89,7 +89,7 @@ class EquipmentService extends Service {
                     type: 'hat',
                     value: [
                         {
-                            defense: this.Random(20, 25)
+                            label: 'defense', value: this.Random(20, 25)
                         }
                     ],
                     effect: [],
@@ -113,7 +113,7 @@ class EquipmentService extends Service {
                     type: 'hat',
                     value: [
                         {
-                            defense: this.Random(25, 30)
+                            label: 'defense', value: this.Random(25, 30)
                         }
                     ],
                     effect: [],
@@ -137,7 +137,7 @@ class EquipmentService extends Service {
                     type: 'hat',
                     value: [
                         {
-                            defense: this.Random(30, 35)
+                            label: 'defense', value: this.Random(30, 35)
                         }
                     ],
                     effect: [],
@@ -172,7 +172,7 @@ class EquipmentService extends Service {
                     type: 'clothes',
                     value: [
                         {
-                            defense: this.Random(45, 50)
+                            label: 'defense', value: this.Random(45, 50)
                         }
                     ],
                     effect: [],
@@ -187,7 +187,7 @@ class EquipmentService extends Service {
                     type: 'clothes',
                     value: [
                         {
-                            defense: this.Random(50, 60)
+                            label: 'defense', value: this.Random(50, 60)
                         }
                     ],
                     effect: [],
@@ -202,7 +202,7 @@ class EquipmentService extends Service {
                     type: 'clothes',
                     value: [
                         {
-                            defense: this.Random(60, 70)
+                            label: 'defense', value: this.Random(60, 70)
                         }
                     ],
                     effect: [],
@@ -226,7 +226,7 @@ class EquipmentService extends Service {
                     type: 'clothes',
                     value: [
                         {
-                            defense: this.Random(70, 80)
+                            label: 'defense', value: this.Random(70, 80)
                         }
                     ],
                     effect: [],
@@ -250,7 +250,7 @@ class EquipmentService extends Service {
                     type: 'clothes',
                     value: [
                         {
-                            defense: this.Random(80, 100)
+                            label: 'defense', value: this.Random(80, 100)
                         }
                     ],
                     effect: [],
@@ -285,7 +285,7 @@ class EquipmentService extends Service {
                     type: 'pants',
                     value: [
                         {
-                            defense: this.Random(20, 25)
+                            label: 'defense', value: this.Random(20, 25)
                         }
                     ],
                     effect: [],
@@ -300,7 +300,7 @@ class EquipmentService extends Service {
                     type: 'pants',
                     value: [
                         {
-                            defense: this.Random(25, 30)
+                            label: 'defense', value: this.Random(25, 30)
                         }
                     ],
                     effect: [],
@@ -315,7 +315,7 @@ class EquipmentService extends Service {
                     type: 'pants',
                     value: [
                         {
-                            defense: this.Random(30, 50)
+                            label: 'defense', value: this.Random(30, 50)
                         }
                     ],
                     effect: [],
@@ -339,7 +339,7 @@ class EquipmentService extends Service {
                     type: 'pants',
                     value: [
                         {
-                            defense: this.Random(50, 60)
+                            label: 'defense', value: this.Random(50, 60)
                         }
                     ],
                     effect: [],
@@ -363,7 +363,7 @@ class EquipmentService extends Service {
                     type: 'pants',
                     value: [
                         {
-                            defense: this.Random(60, 80)
+                            label: 'defense', value: this.Random(60, 80)
                         }
                     ],
                     effect: [],
@@ -398,7 +398,7 @@ class EquipmentService extends Service {
                     type: 'ring',
                     value: [
                         {
-                            HP: this.Random(200, 500)
+                            label: 'HP', value: this.Random(200, 500)
                         }
                     ],
                     effect: [],
@@ -413,7 +413,7 @@ class EquipmentService extends Service {
                     type: 'ring',
                     value: [
                         {
-                            HP: this.Random(500, 800)
+                            label: 'HP', value: this.Random(500, 800)
                         }
                     ],
                     effect: [],
@@ -428,7 +428,7 @@ class EquipmentService extends Service {
                     type: 'ring',
                     value: [
                         {
-                            HP: this.Random(800, 1000)
+                            label: 'HP', value: this.Random(800, 1000)
                         }
                     ],
                     effect: [],
@@ -452,7 +452,7 @@ class EquipmentService extends Service {
                     type: 'ring',
                     value: [
                         {
-                            HP: this.Random(1000, 1200)
+                            label: 'HP', value: this.Random(1000, 1200)
                         }
                     ],
                     effect: [],
@@ -476,7 +476,7 @@ class EquipmentService extends Service {
                     type: 'ring',
                     value: [
                         {
-                            HP: this.Random(1200, 1500)
+                            label: 'HP', value: this.Random(1200, 1500)
                         }
                     ],
                     effect: [],
@@ -511,7 +511,7 @@ class EquipmentService extends Service {
                     type: 'talisman',
                     value: [
                         {
-                            speed: this.Random(5, 10)
+                            label: 'speed', value: this.Random(5, 10)
                         }
                     ],
                     effect: [],
@@ -526,7 +526,7 @@ class EquipmentService extends Service {
                     type: 'talisman',
                     value: [
                         {
-                            HP: this.Random(10, 15)
+                            label: 'speed', value: this.Random(10, 15)
                         }
                     ],
                     effect: [],
@@ -541,7 +541,7 @@ class EquipmentService extends Service {
                     type: 'talisman',
                     value: [
                         {
-                            HP: this.Random(15, 20)
+                            label: 'speed', value: this.Random(15, 20)
                         }
                     ],
                     effect: [],
@@ -565,7 +565,7 @@ class EquipmentService extends Service {
                     type: 'talisman',
                     value: [
                         {
-                            HP: this.Random(20, 25)
+                            label: 'speed', value: this.Random(20, 25)
                         }
                     ],
                     effect: [],
@@ -589,7 +589,7 @@ class EquipmentService extends Service {
                     type: 'talisman',
                     value: [
                         {
-                            HP: this.Random(25, 35)
+                            label: 'speed', value: this.Random(25, 35)
                         }
                     ],
                     effect: [],
@@ -624,7 +624,7 @@ class EquipmentService extends Service {
                     type: 'shoes',
                     value: [
                         {
-                            speed: this.Random(5, 10)
+                            label: 'speed', value: this.Random(5, 10)
                         }
                     ],
                     effect: [],
@@ -639,7 +639,7 @@ class EquipmentService extends Service {
                     type: 'shoes',
                     value: [
                         {
-                            HP: this.Random(10, 15)
+                            label: 'speed', value: this.Random(10, 15)
                         }
                     ],
                     effect: [],
@@ -654,7 +654,7 @@ class EquipmentService extends Service {
                     type: 'shoes',
                     value: [
                         {
-                            HP: this.Random(15, 20)
+                            label: 'speed', value: this.Random(15, 20)
                         }
                     ],
                     effect: [],
@@ -678,7 +678,7 @@ class EquipmentService extends Service {
                     type: 'shoes',
                     value: [
                         {
-                            HP: this.Random(20, 25)
+                            label: 'speed', value: this.Random(20, 25)
                         }
                     ],
                     effect: [],
@@ -702,7 +702,7 @@ class EquipmentService extends Service {
                     type: 'shoes',
                     value: [
                         {
-                            HP: this.Random(25, 35)
+                            label: 'speed', value: this.Random(25, 35)
                         }
                     ],
                     effect: [],
@@ -737,7 +737,7 @@ class EquipmentService extends Service {
                     type: 'sword',
                     value: [
                         {
-                            power: this.Random(60, 100)
+                            label: 'power', value: this.Random(60, 100)
                         }
                     ],
                     effect: [],
@@ -752,7 +752,7 @@ class EquipmentService extends Service {
                     type: 'sword',
                     value: [
                         {
-                            power: this.Random(100, 130)
+                            label: 'power', value: this.Random(100, 130)
                         }
                     ],
                     effect: [],
@@ -767,7 +767,7 @@ class EquipmentService extends Service {
                     type: 'sword',
                     value: [
                         {
-                            power: this.Random(130, 150)
+                            label: 'power', value: this.Random(130, 150)
                         }
                     ],
                     effect: [],
@@ -791,7 +791,7 @@ class EquipmentService extends Service {
                     type: 'sword',
                     value: [
                         {
-                            power: this.Random(150, 180)
+                            label: 'power', value: this.Random(150, 180)
                         }
                     ],
                     effect: [],
@@ -815,7 +815,7 @@ class EquipmentService extends Service {
                     type: 'sword',
                     value: [
                         {
-                            power: this.Random(180, 200)
+                            label: 'power', value: this.Random(180, 200)
                         }
                     ],
                     effect: [],
