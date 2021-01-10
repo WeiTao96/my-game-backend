@@ -9,5 +9,6 @@ module.exports = app => {
   require('./router/person')(app);
   require('./router/equipment')(app);
   require('./router/skill')(app);
+  require('./router/assets')(app);
   router.get('/', controller.home.index);
 };
