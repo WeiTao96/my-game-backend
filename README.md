@@ -1,5 +1,6 @@
-# example
+文字门派经营游戏后端
 
+启动需要在 config/config.default.js 配置 MongoDB 数据库
 
 
 ## QuickStart
