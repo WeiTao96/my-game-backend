@@ -17,6 +17,10 @@ class AssetsService extends Service {
         const res = await this.ctx.model.Land.findByIdAndUpdate(id, update)
         return res
     }
+    async handleLandDelete(id) {
+        const res = await this.ctx.model.Land.findByIdAndDelete(id)
+        return res
+    }
     async getAllLand() {
         const res = await this.ctx.model.Land.find({})
         return res
