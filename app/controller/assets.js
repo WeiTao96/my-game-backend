@@ -11,7 +11,7 @@ class AssetsController extends Controller {
         const res = await this.ctx.service.assets.getAllLand()
         this.ctx.body = res
     }
-    async handleRent() {
+    async handleLandRent() {
         const id = this.ctx.params.id;
         const update = {
             name: '农田',
@@ -22,7 +22,7 @@ class AssetsController extends Controller {
         const res = await this.ctx.service.assets.handleLandUpdate(id, update)
         this.ctx.body = res
     }
-    async handleRecover() {
+    async handleLandRecover() {
         const id = this.ctx.params.id;
         const update = {
             name: '荒地',
@@ -34,9 +34,16 @@ class AssetsController extends Controller {
         this.ctx.body = res
     }
 
-    async handleSell() {
+    async handleLandSell() {
         const id = this.ctx.params.id;
         const res = await this.ctx.service.assets.handleLandDelete(id)
+        this.ctx.body = res
+    }
+
+    async handleUpdateBuild() {
+        const id = this.ctx.params.id;
+        const buildName = this.ctx.query.buildName
+        const res = await this.ctx.service.assets.updateBuild(id, buildName)
         this.ctx.body = res
     }
 }
