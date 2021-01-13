@@ -2,6 +2,11 @@
 
 启动需要在 config/config.default.js 配置 MongoDB 数据库
 
+[前端项目地址](https://github.com/WeiTao96/my-game-web)
+
+![image1](/pic/1.png)
+
+![image2](/pic/2.png)
 
 ## QuickStart
 
