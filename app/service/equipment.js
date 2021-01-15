@@ -18,6 +18,10 @@ class EquipmentService extends Service {
         let result = this.ctx.model.EquipmentEffect.find({}).sort({ num: 1 })
         return result
     }
+    async getAllEquipment() {
+        let result = this.ctx.model.Equipment.find({})
+        return result
+    }
     async createNewEquipment(name, type, level) {
         let result
         switch (type) {

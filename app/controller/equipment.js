@@ -23,6 +23,11 @@ class EquipmentController extends Controller {
         const res = await this.ctx.service.equipment.getAllEquipmentEffect()
         this.ctx.body = res
     }
+
+    async getAllEquipment() {
+        const res = await this.ctx.service.equipment.getAllEquipment()
+        this.ctx.body = res
+    }
 }
 
 module.exports = EquipmentController;
